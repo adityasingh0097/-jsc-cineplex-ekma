@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09090b">
+<title>JSC Cineplex Ekma | Movies & Tickets</title>
+<style>
+:root{--bg:#09090b;--card:#151519;--muted:#a1a1aa;--text:#fafafa;--line:#29292f;--accent:#e50914;--accent2:#ff3b30}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#351015 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:rgba(9,9,11,.84);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;letter-spacing:1.5px;line-height:1.05}.logo span{display:block;color:#fff}.logo small{font-size:11px;color:#a1a1aa;letter-spacing:3px}
+.nav a{font-size:14px;color:#d4d4d8;margin-left:20px}.hero{padding:82px 0 65px}.eyebrow{color:#ff5a60;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(42px,8vw,78px);line-height:.98;max-width:760px;margin:16px 0}.hero p{color:#b5b5bd;font-size:18px;max-width:620px;line-height:1.6}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:14px 20px;font-weight:800;border:1px solid var(--line);margin-top:16px}.btn.primary{background:var(--accent);border-color:var(--accent);box-shadow:0 10px 30px rgba(229,9,20,.22)}section{padding:28px 0 70px}.section-title{font-size:30px;margin:0 0 22px}.movies{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.movie{background:linear-gradient(145deg,#18181c,#101014);border:1px solid var(--line);border-radius:22px;overflow:hidden}.poster{min-height:230px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}.poster:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-65px;top:-65px;background:rgba(255,255,255,.08)}.poster.haiwaan{background:linear-gradient(135deg,#3a0d12,#8c1019 55%,#16090b)}.poster.mirzapur{background:linear-gradient(135deg,#111827,#3f2b1b 50%,#0b0b0d)}.poster .tag{position:relative;font-size:11px;letter-spacing:2px;font-weight:900;text-transform:uppercase;color:#ddd}.poster h3{position:relative;font-size:34px;margin:8px 0 0;max-width:75%}.info{padding:22px}.info p{color:var(--muted);margin:0 0 16px}.times{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.time{background:#242429;border:1px solid #33333a;border-radius:9px;padding:9px 12px;font-weight:700;font-size:14px}.book{display:block;text-align:center;background:#fff;color:#09090b;border-radius:11px;padding:13px;font-weight:900}.note{color:#8f8f98;font-size:13px;line-height:1.5;margin-top:14px}.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}.box h3{margin-top:0}.box p{color:var(--muted);line-height:1.7}.map{display:inline-block;color:#fff;font-weight:800}.footer{border-top:1px solid var(--line);padding:28px 0;color:#777;font-size:13px;display:flex;justify-content:space-between;gap:15px}
+@media(max-width:700px){.nav a{display:none}.hero{padding-top:60px}.movies,.about{grid-template-columns:1fr}.poster{min-height:210px}.footer{flex-direction:column}.wrap{padding:0 16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="logo"><span>JSC CINEPLEX</span><small>EKMA</small></div>
+  <nav><a href="#shows">Shows</a><a href="#about">About</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Ekma • Saran • Bihar</div>
+  <h1>Your movie night starts here.</h1>
+  <p>Check today's shows at JSC Cineplex Ekma and book your movie tickets through District.</p>
+  <a class="btn primary" href="#shows">View Today's Shows ↓</a>
+</div></section>
+
+<section id="shows"><div class="wrap">
+  <h2 class="section-title">Today's Shows</h2>
+  <div class="movies">
+    <article class="movie">
+      <div class="poster haiwaan"><div class="tag">Now Showing</div><h3>HAIWAAN</h3></div>
+      <div class="info">
+        <p>Hindi • Movie</p>
+        <div class="times"><span class="time">3:00 PM</span><span class="time">6:00 PM</span></div>
+        <a class="book" href="https://www.district.in/" target="_blank" rel="noopener">Book on District ↗</a>
+        <div class="note">District will open in a new tab. Replace this link with the direct JSC Cineplex District listing when available.</div>
+      </div>
+    </article>
+    <article class="movie">
+      <div class="poster mirzapur"><div class="tag">Now Showing</div><h3>MIRZAPUR: THE MOVIE</h3></div>
+      <div class="info">
+        <p>Hindi • Movie</p>
+        <div class="times"><span class="time">11:45 AM</span><span class="time">9:00 PM</span></div>
+        <a class="book" href="https://www.district.in/" target="_blank" rel="noopener">Book on District ↗</a>
+        <div class="note">District will open in a new tab. Replace this link with the direct JSC Cineplex District listing when available.</div>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2 class="section-title">JSC Cineplex Ekma</h2>
+  <div class="about">
+    <div class="box"><h3>About the Cinema</h3><p>Welcome to JSC Cineplex Ekma — your local destination for a great movie experience in Ekma, Saran, Bihar.</p></div>
+    <div class="box"><h3>Find Us</h3><p>Ekma, Saran, Bihar 841208</p><a class="map" href="https://www.google.com/maps/search/?api=1&query=JSC+Cineplex+Ekma" target="_blank" rel="noopener">Open Google Maps ↗</a></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap footer"><span>© 2026 JSC Cineplex Ekma</span><span>Movies • Shows • Tickets</span></div></footer>
+</body>
+</html>
